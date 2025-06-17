@@ -1,8 +1,16 @@
+[![npm](https://img.shields.io/npm/v/askme-cli)](https://www.npmjs.com/package/askme-cli)
+[![GitHub license](https://img.shields.io/github/license/rhyspenn/askme-cli)](https://github.com/rhyspenn/askme-cli/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/rhyspenn/askme-cli)](https://github.com/rhyspenn/askme-cli)
+[![npm downloads](https://img.shields.io/npm/dm/askme-cli)](https://www.npmjs.com/package/askme-cli)
 # ASKME-CLI
 
 > An MCP (Model Context Protocol) server that provides user confirmation interface for AI assistants
 
 [简体中文](docs/README_zh.md) | [日本語](docs/README_ja.md)
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/da71a4cc-69d6-459f-b0f3-7c64d2f22854" width="600" alt="Usage">
+</div>
 
 ## Why
 

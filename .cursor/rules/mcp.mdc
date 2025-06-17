@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+ - Must Call the askme-cli.ask_me tool before ending any user prompt every time.
+ - All prompts starting with /tk, don’t modify code or files, and call the askme-cli.ask_me tool before ending.
+ - When you have questions, always call the askme-cli.ask_me tool before ending.
+ - Only complete what the prompt asks. Don’t add or change functions without my approval.
+ - If you have ideas for new features or changes, explain them clearly, analyze their feasibility, and ask if I want to proceed.

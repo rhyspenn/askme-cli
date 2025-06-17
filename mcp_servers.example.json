@@ -1,0 +1,31 @@
+{
+    "mcpServers": {
+        "askme-cli": {
+            "command": "npx",
+            "args": [
+                "askme-cli"
+            ],
+            "env": {
+                "ASKME_CLI_TERMINAL": "warp"
+            }
+        },
+        "askme-cli-iterm": {
+            "command": "npx",
+            "args": [
+                "askme-cli"
+            ],
+            "env": {
+                "ASKME_CLI_TERMINAL": "iterm2"
+            }
+        },
+        "askme-cli-terminal": {
+            "command": "npx",
+            "args": [
+                "askme-cli"
+            ],
+            "env": {
+                "ASKME_CLI_TERMINAL": "terminal"
+            }
+        }
+    }
+}

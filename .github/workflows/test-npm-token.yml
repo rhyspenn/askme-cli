@@ -21,12 +21,30 @@ jobs:
           npm whoami
           echo "✅ NPM token is working!"
 
-      - name: Test package access
+      - name: Check existing packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo "Testing package access permissions..."
-          npm access list packages || echo "No packages found or limited access"
+          echo "Checking for existing packages..."
+          if npm access list packages 2>/dev/null; then
+            echo "✅ Found existing packages"
+          else
+            echo "ℹ️ No packages found (this is normal for first-time publishing)"
+          fi
+
+      - name: Test package name availability
+        run: |
+          echo "Testing package name availability..."
+          PACKAGE_NAME=$(npm pkg get name | tr -d '"')
+          if npm view "$PACKAGE_NAME" 2>/dev/null; then
+            echo "⚠️ Package '$PACKAGE_NAME' already exists on npm"
+            echo "You may need to:"
+            echo "  1. Use a different name"
+            echo "  2. Use a scoped name like @yourusername/askme-cli"
+            echo "  3. Contact the current owner if it's your package"
+          else
+            echo "✅ Package name '$PACKAGE_NAME' is available!"
+          fi
 
       - name: Verify registry connection
         run: |
@@ -40,3 +58,13 @@ jobs:
           npm pkg fix
           npm pkg get name version
           echo "✅ package.json is valid!"
+
+      - name: Test dry-run publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "Testing publish permissions with dry-run..."
+          npm install
+          npm run build
+          npm publish --dry-run
+          echo "✅ Publish dry-run successful!"

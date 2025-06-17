@@ -1,5 +1,6 @@
 > [!NOTE]
-> We'd love your help! If you try askme-cli on Windows or have compatibility fixes, PRs are very welcome👏.
+> We'd love your help! If you try askme-cli on Windows or have compatibility fixes, PRs are very welcome👏.  
+
 [![npm](https://img.shields.io/npm/v/askme-cli)](https://www.npmjs.com/package/askme-cli)
 [![GitHub license](https://img.shields.io/github/license/rhyspenn/askme-cli)](https://github.com/rhyspenn/askme-cli/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/rhyspenn/askme-cli)](https://github.com/rhyspenn/askme-cli)

@@ -8,7 +8,7 @@
 
 [简体中文](docs/README_zh.md) | [日本語](docs/README_ja.md)
 
-<img src="https://github.com/user-attachments/assets/da71a4cc-69d6-459f-b0f3-7c64d2f22854" style="max-width: 100%; width: 600px;" alt="Usage">
+<img src="https://github.com/user-attachments/assets/da71a4cc-69d6-459f-b0f3-7c64d2f22854" style="max-width: 100%; width: 800px;" alt="Usage">
 
 ## Why
 

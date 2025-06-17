@@ -51,5 +51,17 @@
         "typescript"
     ],
     "author": "rhyspenn",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rhyspenn/askme-cli.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rhyspenn/askme-cli/issues"
+    },
+    "homepage": "https://github.com/rhyspenn/askme-cli#readme",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    }
 }

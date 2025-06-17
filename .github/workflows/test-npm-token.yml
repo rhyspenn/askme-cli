@@ -1,0 +1,42 @@
+name: Test NPM Token
+
+on:
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  test-token:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Test NPM authentication
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "Testing NPM authentication..."
+          npm whoami
+          echo "✅ NPM token is working!"
+
+      - name: Test package access
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "Testing package access permissions..."
+          npm access list packages || echo "No packages found or limited access"
+
+      - name: Verify registry connection
+        run: |
+          echo "Testing registry connection..."
+          npm ping
+          echo "✅ Registry connection successful!"
+
+      - name: Check package.json validity
+        run: |
+          echo "Validating package.json..."
+          npm pkg fix
+          npm pkg get name version
+          echo "✅ package.json is valid!"

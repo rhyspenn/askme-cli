@@ -1,10 +1,17 @@
+> [!NOTE]
+> We'd love your help! If you try askme-cli on Windows or have compatibility fixes, PRs are very welcome👏.
 [![npm](https://img.shields.io/npm/v/askme-cli)](https://www.npmjs.com/package/askme-cli)
 [![GitHub license](https://img.shields.io/github/license/rhyspenn/askme-cli)](https://github.com/rhyspenn/askme-cli/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/rhyspenn/askme-cli)](https://github.com/rhyspenn/askme-cli)
 [![npm downloads](https://img.shields.io/npm/dm/askme-cli)](https://www.npmjs.com/package/askme-cli)
-> [!NOTE]
-> We'd love your help with Windows support! If you try askme-cli on Windows or have compatibility fixes, PRs are very welcome.
+
+<div align="center">
+
 # ASKME-CLI
+🤖 💬 ⚡ 🚀 ✨
+
+</div>
+
 
 > An MCP (Model Context Protocol) server that provides user confirmation interface for AI assistants
 
